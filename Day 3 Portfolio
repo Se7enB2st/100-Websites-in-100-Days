@@ -19,7 +19,7 @@ respond.min.js"></script>
  <![endif]-->
 
  <style>
-
+ 
  .navbar-brand {
  	 	 font-size:1.8em;
  }
@@ -83,9 +83,10 @@ h2{
   text-align: center;
 }
 
-
  </style>
+ 
  </head>
+ 
  <body data-spy="scroll" data-target=".navbar-collapse">
 
  <div class="navbar navbar-default navbar-fixed-top">
@@ -206,10 +207,8 @@ jquery.min.js"></script>
  <!-- Include all compiled plugins (below), or include individual files as
 needed -->
  <script src="js/bootstrap.min.js"></script>
-
- <script>
-
-
+ 
+ $(".contentContainer").css("min-height",$(window).height());
 
  </script>
  </body>
