@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+
+<title>Random Background Color </title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script src="core.js"></script>
+
+</head>
+<style>
+	.button {
+		height: 100px;
+		width: 300px;
+		font-size: 1.4em;
+	}
+</style>
+<body>
+
+<div style="text-align:center;">
+
+<h2>Javascript Random Color Showcase</h2>
+
+<p>Click the button to change the color of button and background to a random color.</p>
+
+<div style="text-align:center;">
+
+<button class="button center" type="button">Click Me!</button>
+
+</div>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$('.button').click(function(){
+		$('body').css('background', '#' + random_colour());
+	});
+	$('.button').click(function(){
+		$('button').css('background', '#' + random_colour());
+	});
+});
+
+function random_colour(){
+	return Math.floor(Math.random()*16777215).toString(16);
+}
+
+</script>
+</body>
+</html>
