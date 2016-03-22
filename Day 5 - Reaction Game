@@ -32,15 +32,26 @@
 		font-weight:bold;
 	
 	}
+	
+	.center{
+	
+		text-align="center";
+	
+	}
+	
 </style>
 
 <body>
+	
+	<div class="center">
 
 	<h2> Welcome to Test Your Reaction Time! </h2>
 	
 	<p> Click on the boxes and circles as quickly as possible! <p>
 	
 	<p class="bold">Your reaction time is: <span id="time"> 0 </span>second.</p>
+	
+	</div>
 	
 	<div id="box"> </div>
 	
@@ -88,11 +99,11 @@
 				
 				var top=Math.random();
 				
-				top=top*300;
+				top=top*700;
 				
 				var left=Math.random();
 				
-				left=left*700;
+				left=left*1500;
 				
 				document.getElementById("box").style.top=top+"px";
 				
@@ -129,5 +140,4 @@
 </body>
 
 </html>
-Status API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Contact Help
+
