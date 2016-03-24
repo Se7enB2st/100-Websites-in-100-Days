@@ -217,7 +217,63 @@
              -o-animation-delay: 3.0s;
                 animation-delay: 3.0s;
     }
-    </style>
+    .twelve {
+        -webkit-animation-delay: 3.3s;
+           -moz-animation-delay: 3.3s;
+            -ms-animation-delay: 3.3s;
+             -o-animation-delay: 3.3s;
+                animation-delay: 3.3s;
+    }
+    .thirteen{
+       -webkit-animation-delay: 3.6s;
+          -moz-animation-delay: 3.6s;
+           -ms-animation-delay: 3.6s;
+            -o-animation-delay: 3.6s;
+               animation-delay: 3.6s;
+    }
+    .fourteen{
+       -webkit-animation-delay: 3.9s;
+          -moz-animation-delay: 3.9s;
+           -ms-animation-delay: 3.9s;
+            -o-animation-delay: 3.9s;
+               animation-delay: 3.9s;
+    }
+    .fifteen{
+       -webkit-animation-delay: 4.2s;
+          -moz-animation-delay: 4.2s;
+           -ms-animation-delay: 4.2s;
+            -o-animation-delay: 4.2s;
+               animation-delay: 4.2s;
+    }
+    .sixteen{
+       -webkit-animation-delay: 4.5s;
+          -moz-animation-delay: 4.5s;
+           -ms-animation-delay: 4.5s;
+            -o-animation-delay: 4.5s;
+               animation-delay: 4.5s;
+    }
+    .seventeen{
+       -webkit-animation-delay: 4.8s;
+          -moz-animation-delay: 4.8s;
+           -ms-animation-delay: 4.8s;
+            -o-animation-delay: 4.8s;
+               animation-delay: 4.8s;
+    }
+    .eighteen{
+       -webkit-animation-delay: 5.1s;
+          -moz-animation-delay: 5.1s;
+           -ms-animation-delay: 5.1s;
+            -o-animation-delay: 5.1s;
+               animation-delay: 5.1s;
+    }
+    .nineteen{
+       -webkit-animation-delay: 5.4s;
+          -moz-animation-delay: 5.4s;
+           -ms-animation-delay: 5.4s;
+            -o-animation-delay: 5.4s;
+               animation-delay: 5.4s;
+   }
+</style>
   <body>
     <div class="center">
       <div id="boxWrapper">
@@ -234,5 +290,18 @@
         <div class="box animated introAnimation eleven">S</div>
       </div>
     </div>
-    </body>
-</html>
+    <br/>
+    <div class="center">
+      <div id="boxWrapper">
+        <div class="box animated introAnimation twelve" >B</div>
+        <div class="box animated introAnimation thirteen">Y</div>
+        <div class="box animated introAnimation fourteen">:</div><br/>
+        <div class="box animated introAnimation fifteen">E</div>
+        <div class="box animated introAnimation sixteen">T</div>
+        <div class="box animated introAnimation seventeen">H</div>
+        <div class="box animated introAnimation eighteen">A</div>
+        <div class="box animated introAnimation nineteen">N</div>
+      </div>
+    </div>
+  </body>
+</html
