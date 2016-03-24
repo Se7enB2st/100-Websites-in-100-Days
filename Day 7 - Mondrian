@@ -68,8 +68,8 @@
   	cursor: pointer;
   }
 
-  #green {
-  	background-color: #00FF00;
+  #white {
+  	background-color: #FFFFFF;
   }
 
   #blue {
@@ -144,7 +144,7 @@
 
   <div id="mondrian">
     <div id="palette">
-      <div class="choice" id="green"></div>
+      <div class="choice" id="white"></div>
       <div class="choice" id="blue"></div>
       <div class="choice" id="red"></div>
       <div class="choice" id="yellow"></div>
