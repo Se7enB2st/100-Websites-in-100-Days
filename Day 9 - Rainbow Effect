@@ -1,0 +1,268 @@
+!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rainbow Background</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+<style>
+.center {
+  text-align:center;
+}
+
+#boxWrapper {
+  width: 100%;
+  height: 300px;
+}
+
+.box {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  display: inline-block;
+  font-size: 60px;
+  line-height: 80px;
+  color: white;
+  text-align: center;
+  border:1px solid white;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transform: translateZ(0.1px);
+  -moz-transform: translateZ(0.1px);
+  -o-transform: translateZ(0.1px);
+  -ms-transform: translateZ(0.1px);
+  transform: translateZ(0.1px);
+  -webkit-animation: hue-animation 7s 0s linear infinite;
+  animation: hue-animation 7s 0s linear infinite;
+
+}
+
+.animated {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes introAnimation {
+  0% {
+    -webkit-transform: scale(0) rotate(-180deg);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  70% {
+    -webkit-transform: scale(1) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: scale(0.8) rotate(0deg);
+  }
+}
+
+@-moz-keyframes introAnimation {
+  0% {
+    -moz-transform: scale(0) rotate(-180deg);
+    opacity: 0;
+  }
+  50% {
+    -moz-transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  70% {
+    -moz-transform: scale(1) rotate(0deg);
+  }
+  100% {
+    -moz-transform: scale(0.8) rotate(0deg);
+  }
+}
+
+@-o-keyframes introAnimation {
+  0% {
+    -o-transform: scale(0) rotate(-180deg);
+    opacity: 0;
+  }
+  50% {
+    -o-transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  70% {
+    -o-transform: scale(1) rotate(0deg);
+  }
+  100% {
+    -o-transform: scale(0.8) rotate(0deg);
+  }
+}
+
+@keyframes introAnimation {
+  00% {
+    transform: scale(0) rotate(-180deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    transform: scale(0.8) rotate(0deg);
+  }
+}
+
+.introAnimation {
+  -webkit-backface-visibility: visible !important;
+  -webkit-animation-name: introAnimation;
+  -moz-backface-visibility: visible !important;
+  -moz-animation-name: introAnimation;
+  -o-backface-visibility: visible !important;
+  -o-animation-name: introAnimation;
+  backface-visibility: visible !important;
+  animation-name: introAnimation;
+}
+
+.two {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -ms-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.three {
+  -webkit-animation-delay: 1.0s;
+  -moz-animation-delay: 1.0s;
+  -ms-animation-delay: 1.0s;
+  -o-animation-delay: 1.0s;
+  animation-delay: 1.0s;
+}
+
+.four {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  -ms-animation-delay: 1.5s;
+  -o-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.five {
+  -webkit-animation-delay: 2.0s;
+  -moz-animation-delay: 2.0s;
+  -ms-animation-delay: 2.0s;
+  -o-animation-delay: 2.0s;
+  animation-delay: 2.0s;
+}
+
+.six {
+  -webkit-animation-delay: 2.5s;
+  -moz-animation-delay: 2.5s;
+  -ms-animation-delay: 2.5s;
+  -o-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+.seven {
+  -webkit-animation-delay: 3.0s;
+  -moz-animation-delay: 3.0s;
+  -ms-animation-delay: 3.0s;
+  -o-animation-delay: 3.0s;
+  animation-delay: 3.0s;
+}
+
+.eight {
+  -webkit-animation-delay: 3.5s;
+  -moz-animation-delay: 3.5s;
+  -ms-animation-delay: 3.5s;
+  -o-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
+
+.nine {
+  -webkit-animation-delay: 4.0s;
+  -moz-animation-delay: 4.0s;
+  -ms-animation-delay: 4.0s;
+  -o-animation-delay: 4.0s;
+  animation-delay: 4.0s;
+}
+
+.ten {
+  -webkit-animation-delay: 4.5s;
+  -moz-animation-delay: 4.5s;
+  -ms-animation-delay: 4.5s;
+  -o-animation-delay: 4.5s;
+  animation-delay: 4.5s;
+}
+
+.eleven {
+  -webkit-animation-delay: 5.0s;
+  -moz-animation-delay: 5.0s;
+  -ms-animation-delay: 5.0s;
+  -o-animation-delay: 5.0s;
+  animation-delay: 5.0s;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+#boxWrapper{
+  width: 100%;
+  height: 100vmax;
+  background: #efb73e;
+  opacity: .8;
+  -webkit-animation: hue-animation 7s 0s linear infinite;
+  animation: hue-animation 7s 0s linear infinite;
+}
+
+@keyframes hue-animation {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+
+@-webkit-keyframes hue-animation {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+
+</style>
+<body>
+  <div class="center">
+    <div id="boxWrapper">
+      <div class="box animated introAnimation">R</div>
+      <div class="box animated introAnimation two">I</div>
+      <div class="box animated introAnimation three">N</div>
+      <div class="box animated introAnimation four">B</div>
+      <div class="box animated introAnimation five">O</div>
+      <div class="box animated introAnimation six">W</div>
+      </br>
+      <div class="box animated introAnimation seven">R</div>
+      <div class="box animated introAnimation eight">O</div>
+      <div class="box animated introAnimation nine">C</div>
+      <div class="box animated introAnimation ten">K</div>
+      <div class="box animated introAnimation eleven">S</div>
+    </div>
+  </div>
+</body>
+</html>
