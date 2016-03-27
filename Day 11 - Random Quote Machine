@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Random Quote Machine</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jqueryui.min.js"></script>
+  </head>
+  <style>
+Body{
+  background-color:black;
+}
+h1{
+  color:white;
+  font-size: 40px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+p{
+  color:white;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-style: italic;
+  font-size:20px;
+}
+.btn{
+  border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: white;
+	background: none;
+	cursor: pointer;
+	padding: 10px 20px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  border:2px solid white;
+}
+.quotecontainer{
+  background-color:black;
+  width:45%;
+  margin-right: auto;
+  margin-left: auto;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding:25px;
+  height:auto;
+  color:white;
+  border:2px solid white;
+}
+.quote{
+  font-size:35px;
+  font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+.author{
+  font-size:20px;
+  font-style:italic;
+}
+
+  </style>
+  <body>
+    <div class="container-fluid text-center">
+      <h1>Random Quote Generator</h1>
+      <p>Some of my favorite quotes!</p>
+      <button class="btn btn-default" type="submit">New Quote</button>
+    </br></br>
+      <div class="quotecontainer">
+        <span class="quote">I love Cookies</span>
+        <span class="author">- Cookies Monster</span>
+      </div>
+    <div>
+
+
+  <script>
+    $(document).ready(function(){
+      function getQuote(){
+        var quote = ["In the end, it's not the years in your life that count. It's the life in your years!",
+        "Life isn't about finding yourself. Life is about creating yourself.",
+        "The purpose of our lives is to be happy."];
+
+        var author=["-Abraham Lincoin", "-George Bernard Shaw", "-Dalai Lame"];
+
+        var randomNum = Math.floor((Math.random()*quote.length));
+        var randomQuote = quote[randomNum];
+        var randomAuthor = auther[randomNum];
+
+        $(".quote").text(randomQuote);
+        $(".author").text(randomAuthor);
+
+        $(".btn").on("click", function(){
+          getQuote();
+        });
+    });
+  </script>
+  </body>
+</html>
